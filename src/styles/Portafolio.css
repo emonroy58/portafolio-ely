@@ -1,0 +1,143 @@
+/*iconos*/
+
+*{
+    box-sizing: border-box;
+}
+.ico-firebase{
+  
+    font-size: 0em;
+    display: flex;
+}
+
+.title-skill{
+    color: white;
+    margin-left: 80px;
+}
+
+.skills-container{
+    
+    width: 260%;
+    height: 60vh;
+}
+.skills{
+    
+    font-size: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list-skills{
+    
+  margin: 35px;
+}
+.list-skills ul{
+    list-style-type: none;
+    display: inline;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+.list-skills li{
+    color: white;   
+    list-style-type: none;
+    display: inline-block;
+    font-size: 55px;
+    margin: 1%;
+}
+
+
+/*galeria*/
+.img-portafolio{
+    width: 280px;
+    height: 185px;
+}
+
+.img-portafolio-alex{
+    width: 280px; 
+    height: 185px; 
+   
+    
+}
+.img-social{
+    width: 280px;
+    height: 185px;
+}
+
+
+.img-portafolio-cesar{
+
+    width: 250px;
+    height: 185px; 
+    margin-left: 15px;
+}
+
+.img-simbolo{
+    
+    height: 80vh;
+}
+
+
+
+.contenedor{
+    width:100%; /*centrar contenido general*/
+    margin: 30PX;
+}
+.caja{
+    margin: 2px;
+  
+}
+
+.caja--columna div{/* a los div q estandentro de esta clase*/
+background:#002E56; 
+ height: 185px;
+}
+
+.caja--columna{
+    display: grid;
+}
+
+@media(min-width:520px){
+    .caja--columna{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    
+}
+
+@media(min-width:1024px){
+    .contenedor{
+        width: 1024px;
+    }
+    .caja--columna{
+        
+        grid-auto-rows: minmax(150px,auto);  /*medida de las filas*/
+        grid-template-columns: repeat(4,1fr); /*vamos a tener 3 columnas*/
+    }
+
+    .caja--columna .caja:nth-child(4){
+        background: #ffff;        
+        grid-column: 4/4;/*posicion col 4,4*/
+        grid-row: 1/4; /*le decimos:columna 1 - fila 4*/
+    }
+
+    .caja--columna .caja:nth-child(5){
+        background: #002E56; 
+        grid-column: 1/3;/*posicion col 1,3*/
+        grid-row: 2/3; /*le decimos:columna 1 - fila 4*/
+    }
+}
+
+/*modal*/
+
+.title{
+    font-size: 5px;
+    text-align: center;
+}
+.text-app{
+font-size:0.8em;
+text-align: justify;
+}
+
+.text-app-link{
+    font-size: 5px;
+    text-align: center;
+}
